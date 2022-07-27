@@ -1,0 +1,605 @@
+<mvc:View controllerName="ZSD_COCKPIT.controller.View1" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:vk="sap.ui.vk">
+	<App id="app" class="zoomContainer">
+		<ScrollContainer height="100%" width="100%" vertical="true" focusable="true">
+			<OverflowToolbar style="Clear" height="120px">
+				<Button icon="sap-icon://save"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<ToolbarSeparator/>
+				<Button icon="sap-icon://edit"/>
+				<Button icon="sap-icon://delete"/>
+				<ToolbarSeparator/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<ToolbarSeparator/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<Button icon="sap-icon://circle-task-2"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://multiselect-all"/>
+				<Button icon="sap-icon://cursor-arrow"/>
+				<ToolbarSeparator/>
+				<Button icon="sap-icon://nav-back"/>
+				<Button icon="sap-icon://navigation-right-arrow"/>
+				<Button text="Voltar"/>
+			</OverflowToolbar>
+			<l:Splitter orientation="Vertical">
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="50px"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<Input value="Emp: 1 - Tipo Receptor: Cliente - Receptor: 24729 DISPATU - DISTRIBUIDORA DE PEÇAS AUTO" class="noborder" enabled="false"/>
+						<CheckBox text="Incluir itens descontinuados na pesquisa">
+							<layoutData>
+								<l:SplitterLayoutData size="30%" resizable="false"/>
+							</layoutData>
+						</CheckBox>
+					</l:contentAreas>
+				</l:Splitter>
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="45px" resizable="false"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<FlexBox alignItems="Center">
+							<Label text="Cód Interno">
+								<layoutData>
+									<FlexItemData growFactor="1.5" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Montadora" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="1.3" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Veiculo" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.5" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Modelo" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="1.4" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<CheckBox text="Liquidação">
+								<layoutData>
+									<FlexItemData growFactor="1.0" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</CheckBox>
+							<CheckBox text="Promoção">
+								<layoutData>
+									<FlexItemData growFactor="1.3" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</CheckBox>
+							<CheckBox text="Promoções em Destaque">
+								<layoutData>
+									<FlexItemData growFactor="1.2" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</CheckBox>
+						</FlexBox>
+					</l:contentAreas>
+				</l:Splitter>
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="50px" resizable="false"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<Input value="00572" class="noborder" enabled="false">
+							<layoutData>
+								<l:SplitterLayoutData size="6%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="820" class="noborder" enabled="false">
+							<layoutData>
+								<l:SplitterLayoutData size="6%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="0945" class="noborder" enabled="false">
+							<layoutData>
+								<l:SplitterLayoutData size="6%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="" class="noborder"/>
+						<Input value="%KA" class="noborder">
+							<layoutData>
+								<l:SplitterLayoutData size="7%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="" class="noborder"/>
+						<CheckBox text="Novos">
+							<layoutData>
+								<l:SplitterLayoutData size="12.3%" resizable="false"/>
+							</layoutData>
+						</CheckBox>
+						<CheckBox text="Em análise">
+							<layoutData>
+								<l:SplitterLayoutData size="auto" resizable="false"/>
+							</layoutData>
+						</CheckBox>
+						<CheckBox text="Lista de Flexibilização">
+							<layoutData>
+								<l:SplitterLayoutData size="auto" resizable="false"/>
+							</layoutData>
+						</CheckBox>
+					</l:contentAreas>
+				</l:Splitter>
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="390px"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<t:Table id="table1" ariaLabelledBy="title" selectionMode="MultiToggle" rows="{/modelData}" visibleRowCount="5" enableColumnFreeze="true"
+							showColumnVisibilityMenu="true">
+							<t:extension>
+								<OverflowToolbar style="Clear" height="120px">
+									<Title id="title" text="Produtos"/>
+									<RadioButtonGroup id="rbg3" columns="2" class="sapUiSmallMargin" selectedIndex="1" enabled="false">
+										<RadioButton id="RB1" text="Cód Interno"/>
+										<RadioButton id="RB2" text="Cód Fabricante"/>
+									</RadioButtonGroup>
+									<ComboBox placeholder="Leve" width="8rem" class="comboB">
+										<items>
+											<core:Item text="Leve" key="Leve"/>
+										</items>
+									</ComboBox>
+									<Button text="Inconformidade" press=""/>
+									<Button text="Desconto" press=""/>
+									<Button text="Inclui" press=""/>
+									<Button text="Todos" press=""/>
+									<Button text="Imagem" press=""/>
+									<ToolbarSpacer/>
+									<Image src="./images/produto.png"/>
+								</OverflowToolbar>
+							</t:extension>
+							<t:columns>
+								<t:Column width="auto">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Fabricante" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Fabricante}" id="pisId"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12" id="columnQtd">
+									<t:multiLabels>
+										<Label text="Quantidades" textAlign="Center" width="100%"/>
+										<Label text="Est" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Est}" class="border99"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Indisp." textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Indisp}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Liq Dsp." textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{LiqDsp}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Sinal}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Es-Tr" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{EsTr}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Inc" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Inc}" class="noborder99"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Saldo" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Saldo}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Pend" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Pend}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="1rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label visible="false"/>
+									</t:multiLabels>
+									<t:template>
+										<Text value=""/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Fabr" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Fabr}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="1rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label visible="false"/>
+									</t:multiLabels>
+									<t:template>
+										<Text value=""/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="12">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Emp" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Emp}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="4" id="columnDesc">
+									<t:multiLabels>
+										<Label text="Descontos" textAlign="Center" width="100%"/>
+										<Label text="Prom" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Prom}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="4">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Pis" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Pis}" enabled="false"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="4">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Rep" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Rep}" enabled="false"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="4">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label text="Esp" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Esp}" enabled="false"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="1" id="columnRep">
+									<t:multiLabels>
+										<Label text="Rep" textAlign="Center" width="100%"/>
+										<Label text="Custo" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Custo}" enabled="false"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="1rem" headerSpan="1" id="columnEmpty">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label visible="false"/>
+									</t:multiLabels>
+									<t:template>
+										<Text value=""/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="1" id="columEn">
+									<t:multiLabels>
+										<Label text="En/De" textAlign="Center" width="100%"/>
+										<Label text="Fina" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Fina}" enabled="false"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="1" id="colum1">
+									<t:multiLabels>
+										<Label text="Enc" textAlign="Center" width="100%"/>
+										<Label text="Frete" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Frete}" enabled="false"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="1rem" headerSpan="1" id="colum2">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label visible="false"/>
+									</t:multiLabels>
+									<t:template>
+										<Text value=""/>
+									</t:template>
+								</t:Column>
+								<t:Column width="6rem" headerSpan="4" id="colum3">
+									<t:multiLabels>
+										<Label text="Preco" textAlign="Center" width="100%"/>
+										<Label text="Lista" textAlign="Center" width="100%"/>
+									</t:multiLabels>
+									<t:template>
+										<Input value="{Lista}" enabled="false"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="4">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label visible="false"/>
+									</t:multiLabels>
+									<t:template>
+										<Button text="S" press="" type="Reject"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="4rem" headerSpan="4">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label visible="false"/>
+									</t:multiLabels>
+									<t:template>
+										<Button text="E" press="" id="btnE"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="6rem" headerSpan="4">
+									<t:multiLabels>
+										<Label visible="false"/>
+										<Label visible="false"/>
+									</t:multiLabels>
+									<t:template>
+										<Button text="Aplicação" press=""/>
+									</t:template>
+								</t:Column>
+							</t:columns>
+						</t:Table>
+					</l:contentAreas>
+				</l:Splitter>
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="50px" resizable="false"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<FlexBox alignItems="Center" height="40px">
+							<Label text="Produto:" labelFor="inputId"></Label>
+							<Input id="inputId" value="COXIM TIRANTE TORCAO TRASEIRO CAMBIO" class="noborder2" enabled="false">
+								<layoutData>
+									<FlexItemData growFactor="0.7" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Input>
+						</FlexBox>
+						<Button text="Catálogo Fraga" type="Emphasized" class="sapMBtnEmphasized">
+							<layoutData>
+								<l:SplitterLayoutData size="8%" resizable="false"/>
+							</layoutData>
+						</Button>
+					</l:contentAreas>
+				</l:Splitter>
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="25px" resizable="false"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<FlexBox alignItems="Center">
+							<Label text="Qtd min">
+								<layoutData>
+									<FlexItemData growFactor="0.4" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Uni" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.2" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Em Pad." class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.7" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Vlr.Item Liq" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.5" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Incent Sufr." class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.5" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Vlr. Ant Trib" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.5" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Vlr Sub. Trib" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.5" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Vlr Liq + Trib" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="0.5" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+							<Label text="Tot Prods Cot" class="noborder">
+								<layoutData>
+									<FlexItemData growFactor="2.7" baseSize="0" styleClass="sapUiTinyMargin"/>
+								</layoutData>
+							</Label>
+						</FlexBox>
+					</l:contentAreas>
+				</l:Splitter>
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="50px" resizable="false"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<Input value="1" class="noborder" enabled="false">
+							<layoutData>
+								<l:SplitterLayoutData size="6%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="PC" class="noborder" enabled="false">
+							<layoutData>
+								<l:SplitterLayoutData size="4%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="2" class="noborder" enabled="false">
+							<layoutData>
+								<l:SplitterLayoutData size="6%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<CheckBox selected="true">
+							<layoutData>
+								<l:SplitterLayoutData size="3%" resizable="false"/>
+							</layoutData>
+						</CheckBox>
+						<Input value="110,42" class="noborder3">
+							<layoutData>
+								<l:SplitterLayoutData size="8%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="0,00" class="noborder">
+							<layoutData>
+								<l:SplitterLayoutData size="8%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="0,00" class="noborder4">
+							<layoutData>
+								<l:SplitterLayoutData size="8%" resizable="true"/>
+							</layoutData>
+						</Input>
+						<Input value="0,00" class="noborder4" enabled="true">
+							<layoutData>
+								<l:SplitterLayoutData size="8%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="110,42" class="noborder4" enabled="true">
+							<layoutData>
+								<l:SplitterLayoutData size="8%" resizable="false"/>
+							</layoutData>
+						</Input>
+						<Input value="0,00" class="noborder5" enabled="true">
+							<layoutData>
+								<l:SplitterLayoutData size="8%" resizable="false"/>
+							</layoutData>
+						</Input>
+					</l:contentAreas>
+				</l:Splitter>
+				<l:Splitter>
+					<l:layoutData>
+						<l:SplitterLayoutData size="500px" resizable="false"/>
+					</l:layoutData>
+					<l:contentAreas>
+						<t:Table id="table2" ariaLabelledBy="title" rows="{/modelData2}" visibleRowCount="9" selectionMode="None">
+							<t:columns>
+								<t:Column width="20%">
+									<Label text="Montadora" textAlign="Center" width="100%"/>
+									<t:template>
+										<Input value="{Montadora}" id="montadoraInput"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="20%">
+									<Label text="Veiculo" textAlign="Center" width="100%"/>
+									<t:template>
+										<Input value="{veiculo}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="30%">
+									<Label text="Modelo" textAlign="Center" width="100%"/>
+									<t:template>
+										<Input value="{modelo}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="3rem">
+									<Label text="De" textAlign="Center" width="100%"/>
+									<t:template>
+										<Input value="{de}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="3rem">
+									<Label text="" textAlign="Center" width="100%"/>
+									<t:template>
+										<Input value="{anoDe}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="3rem">
+									<Label text="Até" textAlign="Center" width="100%"/>
+									<t:template>
+										<Input value="{ate}"/>
+									</t:template>
+								</t:Column>
+								<t:Column width="3rem">
+									<Label text="" textAlign="Center" width="100%"/>
+									<t:template>
+										<Input value="{anoAte}"/>
+									</t:template>
+								</t:Column>
+							</t:columns>
+						</t:Table>
+						<VBox>
+							<vk:ListPanel headerText="Legenda" selectionMode="None" expanded="true">
+								<vk:items>
+									<vk:LegendItem title="Item Importado" color="rgb(191,195,255)"/>
+									<vk:LegendItem title="Item com bloqueio de desconto" color="rgb(194,239,134)"/>
+									<vk:LegendItem title="Item descontinuado" color="rgb(253,186,7)"/>
+									<vk:LegendItem title="Item da lista de flexibilização" color="rgb(233,184,6)"/>
+									<vk:LegendItem title="Item bônus camp." color="rgb(254,245,116)"/>
+									<vk:LegendItem title="Não liberado p/ compra" color="rgb(144,138,90)"/>
+									<vk:LegendItem title="Valor abaixo da política de prazo" color="rgb(246,118,29)"/>
+									<vk:LegendItem title="Valor dentro da política de prazo" color="rgb(22,120,231)"/>
+									<vk:LegendItem title="Valor acima da política de prazo" color="rgb(127,173,5)"/>
+								</vk:items>
+							</vk:ListPanel>
+							<layoutData>
+								<l:SplitterLayoutData size="20%" resizable="false"/>
+							</layoutData>
+						</VBox>
+					</l:contentAreas>
+				</l:Splitter>
+			</l:Splitter>
+		</ScrollContainer>
+	</App>
+</mvc:View>

@@ -1,0 +1,8 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm=".handleGroupDialogConfirm" reset=".resetGroupDialog">
+		<groupItems>
+			<ViewSettingsItem text="Area(Applicant Company)" key="Region"/>
+			<ViewSettingsItem text="Country(Applicant Company)" key="Country"/>
+		</groupItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

@@ -1,0 +1,177 @@
+{
+  "d" : {
+    "results" : [
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('AP')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('AP')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "AP",
+        "BgTypeDesc" : "ADVANCE PAYMENT BOND",
+        "Numbers" : "5",
+        "Bzbetr" : "78277018.75",
+        "BzbetrAve" : "15655403.75",
+        "BzbetrMax" : "67329520.44",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('BB')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('BB')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "BB",
+        "BgTypeDesc" : "BID BOND",
+        "Numbers" : "3",
+        "Bzbetr" : "7411000.00",
+        "BzbetrAve" : "2470333.33",
+        "BzbetrMax" : "4328800.00",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('COMM')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('COMM')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "COMM",
+        "BgTypeDesc" : "",
+        "Numbers" : "3",
+        "Bzbetr" : "100000.00",
+        "BzbetrAve" : "33333.33",
+        "BzbetrMax" : "50000.00",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('CRED')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('CRED')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "CRED",
+        "BgTypeDesc" : "",
+        "Numbers" : "253",
+        "Bzbetr" : "40137.00",
+        "BzbetrAve" : "158.64",
+        "BzbetrMax" : "10000.00",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('FG')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('FG')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "FG",
+        "BgTypeDesc" : "FINANCIAL GUARANTEE",
+        "Numbers" : "6",
+        "Bzbetr" : "224925.00",
+        "BzbetrAve" : "37487.50",
+        "BzbetrMax" : "89970.00",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('OT')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('OT')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "OT",
+        "BgTypeDesc" : "OTHER GUARANTEE",
+        "Numbers" : "12",
+        "Bzbetr" : "26980190.82",
+        "BzbetrAve" : "2248349.24",
+        "BzbetrMax" : "20000000.00",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('PB')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('PB')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "PB",
+        "BgTypeDesc" : "PERFORMANCE BOND",
+        "Numbers" : "46",
+        "Bzbetr" : "159739373072.06",
+        "BzbetrAve" : "3472595066.78",
+        "BzbetrMax" : "159367554000.00",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('RB')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('RB')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "RB",
+        "BgTypeDesc" : "RETENTION BOND",
+        "Numbers" : "1",
+        "Bzbetr" : "42913.20",
+        "BzbetrAve" : "42913.20",
+        "BzbetrMax" : "42913.20",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      },
+      {
+        "__metadata" : {
+          "id" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('WB')",
+          "uri" : "http://dtr510-ap01.prysmian.gph.local:8000/sap/opu/odata/sap/ZFINTRF_COUNTRY_SRV/ListSet('WB')",
+          "type" : "ZFINTRF_COUNTRY_SRV.List"
+        },
+        "BgType" : "WB",
+        "BgTypeDesc" : "WARRANTY BOND",
+        "Numbers" : "5",
+        "Bzbetr" : "7399171.32",
+        "BzbetrAve" : "1479834.26",
+        "BzbetrMax" : "4299800.00",
+        "BzbetrWei" : "0.53452",
+        "IrBukrs" : "",
+        "IrBgType" : "",
+        "IrDblfz" : "",
+        "IrDelfz" : "",
+        "IrSaktiv" : ""
+      }
+    ]
+  }
+}

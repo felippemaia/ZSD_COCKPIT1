@@ -1,0 +1,70 @@
+/* Enter your custom styles here */
+.noborder .sapMInputBaseInner {
+    border: 1px solid #fdf6b1;
+    outline: none;
+    font-weight:bold;
+}
+.noborder99 .sapMInputBaseInner {
+    color: rgba(252,221,131);
+    font-weight:bold;
+}
+.comboB .sapMComboBoxInner{
+	background-color: rgba(0,231,251)
+}
+input[value="78579"][aria-labelledby|="__column0"] {
+  background-color: rgba(192,242,129);
+}
+input[value="0"][aria-labelledby|="__component0---app--columnQtd"] {
+    background-color: rgba(252,221,131);
+}
+input[value="2"][aria-labelledby|="__component0---app--columnQtd"] {
+    background-color: rgba(252,221,131);
+}
+.noborder2 .sapMInputBaseInner {
+    border: 1px solid #fdf6b1;
+    outline: none;
+    background-color: rgba(192,242,129);
+    font-weight:bold;
+}
+.noborder3 .sapMInputBaseInner {
+    border: 1px solid #fdf6b1;
+    outline: none;
+    background-color: rgba(0,231,251);
+    font-weight:bold;
+}
+.noborder4 .sapMInputBaseInner {
+    border: 1px solid #fdf6b1;
+    outline: none;
+    background-color: rgba(252,221,131);
+    font-weight:bold;
+}
+.noborder5 .sapMInputBaseInner {
+    border: 1px solid #fdf6b1;
+    outline: none;
+    background-color: rgba(222,251,223);
+    font-weight:bold;
+}
+img.absolute {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+.sapUiTabPanel {
+border: none !important;
+}
+.zoomContainer {
+zoom: 60%;
+}
+
+span.sapMBtnInner.sapMBtnEmphasized {
+    background-color: rgba(0,231,251);
+	border-color: rgba(0,231,251);
+	color: blue;
+}
+
+span.sapMBtnInner.sapMBtnReject {
+    background-color: rgba(129,134,192);
+	border-color: rgba(129,134,192);
+	color: white;
+}

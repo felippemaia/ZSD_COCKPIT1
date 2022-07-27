@@ -1,0 +1,40 @@
+{
+	"resources": [{
+		"name": "view/View1.view.xml"
+	}, {
+		"name": "view/SortDialog.fragment.xml"
+	}, {
+		"name": "view/FilterDialog.fragment.xml"
+	}, {
+		"name": "view/GroupDialog.fragment.xml"
+	}, {
+		"name": "controller/View1.controller.js"
+	}, {
+		"name": "css/style.css"
+	}, {
+		"name": ".project.json"
+	}, {
+		"name": "i18n/i18n.properties",
+		"raw": "i18n/i18n.properties"
+	}, {
+		"name": "index.html"
+	}, {
+		"name": "resources.json",
+		"merged": true
+	}, {
+		"name": "model/models.js"
+	}, {
+		"name": "model/model.json"
+	}, {
+		"name": "Component.js"
+	}, {
+		"name": "neo-app.json"
+	}, {
+		"name": "Component-preload.js",
+		"merged": true
+	}, {
+		"name": ".user.project.json"
+	}, {
+		"name": "manifest.json"
+	}]
+}

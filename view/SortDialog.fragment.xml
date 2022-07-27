@@ -1,0 +1,13 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="handleSortDialogConfirm">
+		<sortItems>
+			<ViewSettingsItem text="Area(Applicant Company)" key="Region" selected="true" />
+			<ViewSettingsItem text="Country(Applicant Company)" key="Country" />
+			<ViewSettingsItem text="Sum of EUR(Equivalent)" key="Bzbetr" />
+			<ViewSettingsItem text="Weighted Average Fees % p.a" key="BzbetrWei" />
+		</sortItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>

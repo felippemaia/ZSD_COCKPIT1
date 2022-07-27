@@ -1,0 +1,27 @@
+{
+  "mockpreview": {
+    "mockUri": "",
+    "metadataFilePath": "",
+    "loadJSONFiles": false,
+    "loadCustomRequests": false,
+    "mockRequestsFilePath": ""
+  },
+  "deploy": {
+    "destination": "TDR",
+    "name": "ZSD_COCKPIT"
+  },
+  "projectType": [
+    "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild"
+  ],
+  "build": {
+    "buildRequired": true,
+    "targetFolder": "dist",
+    "lastBuildDateTime": "Thu, 30 Sep 2021 15:27:22 GMT"
+  },
+  "basevalidator": {
+    "services": {
+      "js": "fioriJsValidator"
+    }
+  }
+}
